@@ -72,6 +72,10 @@ h5 {
     font-weight: 600;
 }
 
+.hero-actions {
+    flex-wrap: wrap;
+}
+
 .btn-primary {
     background: var(--primary);
     border: none;
@@ -220,5 +224,96 @@ footer small {
 
     body {
         padding-top: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-logo {
+        height: 34px;
+        transform: none;
+    }
+
+    .hero-card {
+        padding: 1.25rem;
+    }
+
+    .hero-image,
+    .hero-carousel .carousel-item img {
+        height: 280px;
+    }
+
+    .gallery img {
+        height: 200px;
+    }
+
+    .cta {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .hero {
+        padding: 1.5rem 0 3rem;
+    }
+
+    .hero .display-4 {
+        font-size: 2.1rem;
+    }
+
+    .hero .lead {
+        font-size: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-card {
+        padding: 1rem;
+    }
+
+    .hero-image,
+    .hero-carousel .carousel-item img {
+        height: 220px;
+    }
+
+    .stat-card {
+        text-align: center;
+    }
+
+    .timeline {
+        padding-left: 1.25rem;
+    }
+
+    .timeline::before {
+        left: 4px;
+    }
+
+    .timeline-item {
+        padding-left: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+
+    .cta {
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 18px;
+    }
+
+    .cta .btn {
+        width: 100%;
     }
 }
