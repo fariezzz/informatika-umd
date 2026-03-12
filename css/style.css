@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Sora:wght@300;400;500;600&display=swap");
+
+:root {
+    --primary: #2563eb;
+    --secondary: #0f172a;
+    --accent: #38bdf8;
+    --bg: #f8fafc;
+    --muted: #64748b;
+    --card: #ffffff;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    background: var(--bg);
+    color: var(--secondary);
+    padding-top: 76px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.navbar {
+    background: rgba(248, 250, 252, 0.9);
+    border-bottom: 1px solid #e2e8f0;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.navbar-logo {
+    height: 38px;
+    width: auto;
+    transform: scale(1.25);
+    transform-origin: left center;
+    display: block;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background: radial-gradient(80% 80% at 10% 10%, rgba(56, 189, 248, 0.25), transparent 60%),
+        radial-gradient(70% 70% at 90% 20%, rgba(37, 99, 235, 0.20), transparent 60%);
+    margin-top: -76px;
+    padding-top: 76px;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.10);
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.25);
+}
+
+.btn-outline-dark {
+    border-color: #cbd5f1;
+}
+
+.hero-card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+    position: relative;
+    z-index: 2;
+}
+
+.hero-image {
+    border-radius: 20px;
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.hero-carousel .carousel-inner {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.hero-carousel .carousel-item img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+}
+
+.hero-carousel .carousel-indicators [data-bs-target] {
+    background-color: var(--primary);
+}
+
+.stat-card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.section-title {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.feature-card,
+.career-card,
+.facility-card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: 0 18px 30px rgba(15, 23, 42, 0.08);
+    height: 100%;
+}
+
+.feature-card i,
+.career-card i {
+    font-size: 1.75rem;
+    color: var(--primary);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 6px;
+    height: 100%;
+    width: 2px;
+    background: #cbd5f1;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0.3rem;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 0 6px rgba(37, 99, 235, 0.15);
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+}
+
+.cta {
+    background: linear-gradient(120deg, #0f172a 0%, #1e3a8a 60%, #2563eb 100%);
+    color: white;
+    border-radius: 24px;
+    padding: 3rem;
+}
+
+footer {
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+footer a {
+    color: #93c5fd;
+    text-decoration: none;
+}
+
+footer small {
+    color: #e2e8f0;
+}
+
+.shadow-soft {
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+}
+
+@media (max-width: 991px) {
+    .hero {
+        min-height: auto;
+        padding: 2rem 0 4rem;
+        margin-top: -70px;
+        padding-top: calc(2rem + 70px);
+    }
+
+    body {
+        padding-top: 70px;
+    }
+}
